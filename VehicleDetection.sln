@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VehicleDetection", "VehicleDetection\VehicleDetection.vcxproj", "{12811451-9298-4312-9A8A-AE698222F71A}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -12,20 +12,33 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cvBlob", "cvBlob\cvBlob.vcx
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12811451-9298-4312-9A8A-AE698222F71A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12811451-9298-4312-9A8A-AE698222F71A}.Debug|Win32.Build.0 = Debug|Win32
 		{12811451-9298-4312-9A8A-AE698222F71A}.Debug|x64.ActiveCfg = Debug|x64
 		{12811451-9298-4312-9A8A-AE698222F71A}.Debug|x64.Build.0 = Debug|x64
+		{12811451-9298-4312-9A8A-AE698222F71A}.Release|Win32.ActiveCfg = Release|Win32
+		{12811451-9298-4312-9A8A-AE698222F71A}.Release|Win32.Build.0 = Release|Win32
 		{12811451-9298-4312-9A8A-AE698222F71A}.Release|x64.ActiveCfg = Release|x64
 		{12811451-9298-4312-9A8A-AE698222F71A}.Release|x64.Build.0 = Release|x64
+		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|Win32.Build.0 = Debug|Win32
 		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|x64.ActiveCfg = Debug|x64
 		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|x64.Build.0 = Debug|x64
+		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|Win32.ActiveCfg = Release|Win32
+		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|Win32.Build.0 = Release|Win32
 		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|x64.ActiveCfg = Release|x64
 		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AFFF672-99FB-410A-AD37-C6E5D89ED458}
 	EndGlobalSection
 EndGlobal

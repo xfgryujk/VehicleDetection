@@ -301,3 +301,16 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+!/Debug/
+/Debug/*
+!/Release/
+/Release/*
+!/x64/
+!/x64/Debug/
+/x64/Debug/*
+!/x64/Release/
+/x64/Release/*
+!zlibd1.dll
+!zlib1.dll
