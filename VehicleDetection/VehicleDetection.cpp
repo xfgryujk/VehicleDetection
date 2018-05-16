@@ -1,9 +1,9 @@
 ﻿#include "stdafx.h"
-#include <memory>
 #include <opencv2/videoio.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/video.hpp>
-#include <cvblob.h>
+#include <cvb_blob_list.h>
+#include <cvb_track.h>
 using namespace std;
 using namespace cv;
 using namespace cvb;
@@ -32,12 +32,8 @@ void ProcessVideo(const string& videoFilename)
 		int width = (int)capture.get(CV_CAP_PROP_FRAME_WIDTH);
 		int height = (int)capture.get(CV_CAP_PROP_FRAME_HEIGHT);
 
-		unique_ptr<IplImage, void(*)(IplImage*)> labelImg(
-			cvCreateImage(cvSize(width, height), IPL_DEPTH_LABEL, 1), 
-			[](IplImage* p){ cvReleaseImage(&p); }
-		);
-		CvBlobs blobs;
-		CvTracks tracks;
+		BlobList blobs;
+		TrackList tracks;
 
 		while (true)
 		{
@@ -64,10 +60,10 @@ void ProcessVideo(const string& videoFilename)
 			imshow("morphologyEx", fgMaskMOG2);
 
 			// Track
-			cvLabel(&IplImage(fgMaskMOG2), labelImg.get(), blobs);
-			cvFilterByArea(blobs, 64, 10000);
-			cvUpdateTracks(blobs, tracks, 10, 90, 30);
-			cvRenderTracks(tracks, &IplImage(frame), &IplImage(frame));
+			blobs.LabelImage(fgMaskMOG2);
+			blobs.FilterByArea(64, 10000);
+			tracks.UpdateTracks(blobs, 10, 90, 10);
+			tracks.RenderTracks(frame, frame);
 
 			// Show
 			imshow("Frame", frame);

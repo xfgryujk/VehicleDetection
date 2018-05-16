@@ -1,0 +1,3 @@
+[submodule "cvblob"]
+	path = cvblob
+	url = https://github.com/xfgryujk/cvblob.git

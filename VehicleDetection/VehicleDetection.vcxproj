@@ -69,23 +69,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)cvBlob;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)cvblob\vc\bin\$(Configuration)_$(Platform)\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)cvBlob\cvBlob;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)cvBlob;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)cvblob\vc\bin\$(Configuration)_$(Platform)\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)cvBlob\cvBlob;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)cvBlob;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)cvblob\vc\bin\$(Configuration)_$(Platform)\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)cvBlob\cvBlob;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)cvBlob;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)cvblob\vc\bin\$(Configuration)_$(Platform)\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)cvBlob\cvBlob;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
