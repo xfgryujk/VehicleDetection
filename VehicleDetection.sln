@@ -4,11 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VehicleDetection", "VehicleDetection\VehicleDetection.vcxproj", "{12811451-9298-4312-9A8A-AE698222F71A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8} = {6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cvBlob", "cvBlob\cvBlob.vcxproj", "{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +21,6 @@ Global
 		{12811451-9298-4312-9A8A-AE698222F71A}.Release|Win32.Build.0 = Release|Win32
 		{12811451-9298-4312-9A8A-AE698222F71A}.Release|x64.ActiveCfg = Release|x64
 		{12811451-9298-4312-9A8A-AE698222F71A}.Release|x64.Build.0 = Release|x64
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|Win32.ActiveCfg = Debug|Win32
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|Win32.Build.0 = Debug|Win32
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|x64.ActiveCfg = Debug|x64
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Debug|x64.Build.0 = Debug|x64
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|Win32.ActiveCfg = Release|Win32
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|Win32.Build.0 = Release|Win32
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|x64.ActiveCfg = Release|x64
-		{6784F6AA-FAD1-44E9-8F39-8584F9FABFA8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
